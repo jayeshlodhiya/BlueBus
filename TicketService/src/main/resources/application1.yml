@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+    instance:
+    preferIpAddress: true
+spring:
+  application:
+    name: TicketService
+
+
+    datasource:
+      driverClassName: com.mysql.jdbc.Driver
+      spring:
+        datasource:
+          url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/ibe
+      username:
+      password:
+    jpa:
+      hibernate.ddl-auto: update
+      generate-ddl: true
+      show-sql: true
