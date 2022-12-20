@@ -9,6 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 //this is eureca server
 public class BlueBusEurekaServerApplication {
+	//testing
 	public static void main(String[] args) {
 		SpringApplication.run(BlueBusEurekaServerApplication.class, args);
 	}
